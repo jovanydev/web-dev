@@ -1,0 +1,11 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 300px 100px 100px 200px;
+  grid-template-rows: 750px 500px;
+}

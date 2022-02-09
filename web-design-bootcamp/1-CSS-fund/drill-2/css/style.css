@@ -1,0 +1,76 @@
+html,
+body {
+  margin: 0;
+  font-family: Lato;
+  font-size: 18px;
+}
+
+/* -----
+Typography 
+-----*/
+h1 {
+  font-size: 36px;
+  color: #fff;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24;
+  color: #ef5839;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ef5839;
+}
+
+a:hover a:focus {
+  color: white;
+}
+
+/* Layout */
+.container {
+  padding: 45px 0;
+}
+
+.container-accent {
+  background: #fff;
+}
+
+.container-dark {
+  background: #2e354f;
+  color: #fff;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.btn-accent {
+  background-color: white;
+  color: black;
+}
+
+.btn-dark {
+  background-color: #ef5839;
+  color: white;
+}
+
+.btn-accent:hover {
+  background-color: #ef5839;
+  color: white;
+}
+
+.btn-dark:hover {
+  background-color: pink;
+  color: black;
+}

@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  color: #404040;
+  text-align: center;
+}
+
+/* =================
+   Typography 
+   ================= */
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+}
+
+h1 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1.3125rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.3125rem;
+  margin: 0;
+}
+
+h2 + p {
+  color: #f18119;
+  font-weight: 900;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.top-text {
+  color: #f18119;
+  font-size: 0.625rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  order: -1;
+  border-top: 5px solid #f18119;
+  margin-top: 0;
+  padding-top: 3px;
+  border-image: linear-gradient(270deg, #ff713b, #ffa51d) 1;
+}
+
+.fine-print {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+
+/* =================
+   Intro section 
+  ================= */
+.intro {
+  background-color: #404040;
+  background-image: url("../img/ribs.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  padding: 0 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+/* =================
+   main-content section 
+   ================= */
+
+.main-content {
+  padding: 2em 1em;
+}
+
+.intro > *,
+.main-content > * {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =================
+   Layout
+  ================= */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =================
+   form
+   ================= */
+
+.email-collector {
+  width: 80%;
+  max-width: 300px;
+}
+
+.email-collector input,
+.email-collector .btn {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.email-collector input {
+  font-family: inherit;
+  margin-bottom: 0.25em;
+  text-align: inherit;
+  padding: 0.25em;
+  border: 1px solid #404040;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.email-collector input:focus {
+  transform: scale(1.1);
+}
+
+.btn {
+  display: inline-block;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(270deg, #ff713b, #ffa51d);
+  color: white;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: scale(1.1);
+}
+
+/* =================
+  media queries 
+  ================= */
+
+@media (min-width: 650px) {
+  body {
+    font-size: 1.125rem;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+    min-height: 100vh;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

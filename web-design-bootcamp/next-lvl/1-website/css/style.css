@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: #404040;
+  line-height: 1.6;
+}
+
+/* ==================
+    Typography
+===================== */
+
+h1,
+h2,
+strong {
+  font-weight: 700;
+}
+
+.accent-color {
+  color: #ffe600;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  color: #000;
+  margin-top: 1.25em;
+}
+
+/* buttons */
+
+.btn {
+  padding: 0.5em 1.5em;
+  font-weight: 700;
+  margin-top: 0.5em;
+}
+
+.btn-primary {
+  background: #ffe600;
+  color: #000;
+  justify-self: start;
+}
+
+/* ==================
+    general layout
+===================== */
+
+.main-grid {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(260px, 500px) minmax(1em, 1fr);
+}
+
+/* ==================
+    hero area
+===================== */
+
+.hero {
+  background-image: url(/img/hero-bg.jpg);
+  background-size: cover;
+  color: #fff;
+  padding: 4em 0;
+}
+
+.hero > * {
+  grid-column: 2 / 3;
+}
+
+/* ==================
+    Footer
+===================== */
+.footer {
+  background: #ebebeb;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.footer-logo,
+.footer-text,
+.footer-fineprint {
+  opacity: 0.4;
+}
+
+.footer-fineprint {
+  font-size: 0.75rem;
+  margin-top: 4em;
+}
+
+.social-links {
+  order: -1;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  color: #000;
+  font-size: 1.5rem;
+  margin: 0 0.5em;
+}
+
+.social-link:hover {
+  color: #777;
+}
+
+/* ==================
+    info section
+===================== */
+
+.info {
+  padding: 4em 0;
+  text-align: center;
+}
+
+.col-1 {
+  grid-column: 2 / -2;
+}
+
+.col-2 {
+  grid-column: 2 / -2;
+}
+
+@media (min-width: 600px) {
+  .main-grid {
+    grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(180px, 320px)) minmax(
+        1em,
+        1fr
+      );
+  }
+
+  .hero > * {
+    grid-column: 2 / span 2;
+  }
+}

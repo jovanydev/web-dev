@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+/* Typography */
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 2.63rem;
+  border-top: 5px solid #c4c4c4;
+  border-bottom: 5px solid #c4c4c4;
+  padding: 15px 0;
+}
+
+h3 {
+  font-size: 2.25rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0 auto;
+}
+
+.span-heading {
+  font-weight: 700;
+  display: block;
+  color: #99d930;
+}
+
+.h1-style {
+  font-size: 5rem;
+}
+
+.h2-style {
+  font-size: 3.75rem;
+}
+
+.small-text {
+  margin-bottom: 30px;
+  font-size: 0.75rem;
+  color: #99d930;
+}
+
+/* Links */
+a {
+  color: #99d930;
+}
+
+a:hover,
+a:focus {
+  color: #131313;
+}
+
+/* Buttons */
+.btn {
+  background-color: #99d930;
+  color: black;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:focus {
+  color: white;
+  background-color: black;
+}
+
+/* Layout */
+.container {
+  padding: 100px 0;
+}
+
+.con-sophie {
+  background-color: #d7d7d7;
+}
+
+.con-graphic {
+  background-color: #ffeaea;
+}
+
+.con-article {
+  background-color: #eaf9ff;
+}
+
+.wrapper {
+  width: 570px;
+  margin: 0 auto;
+}
