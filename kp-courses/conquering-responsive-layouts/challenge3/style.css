@@ -1,0 +1,165 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* Colors */
+  --clr-dark: 192 36% 21%;
+  --clr-mid: 184 71% 26%;
+  --clr-light: 184 68% 54%;
+  --clr-white: 0 0% 100%;
+
+  /* Font sizes */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+
+  /* font-families */
+  --ff-sans-normal: "Roboto", sans-serif;
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+picture,
+body {
+  margin: 0;
+}
+
+/* Set up the body */
+body {
+  font-family: "Roboto";
+  font-size: var(--fs-400);
+  color: hsl(var(--clr-white));
+}
+
+/* ------------------- */
+/* Utility             */
+/* ------------------- */
+
+/* General */
+
+.container {
+  padding: 50px 30px;
+  max-width: 700px;
+}
+
+/* typography */
+
+.ff-sans-normal {
+  font-family: var(--ff-sans-normal);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+.letter-spacing-3 {
+  letter-spacing: 2.35px;
+}
+.letter-spacing-4 {
+  letter-spacing: 1.5px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+.fs-800 {
+  font-size: var(--fs-800);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* ------------------- */
+/* Sections             */
+/* ------------------- */
+
+.hero {
+  height: 60vh;
+  background-color: hsl(var(--clr-dark));
+}
+
+.hero h1 {
+  margin-bottom: 1em;
+}
+
+.hero p {
+  margin-bottom: 4em;
+}
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
+
+.btn-light {
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(var(--clr-dark));
+  background-color: hsl(var(--clr-light));
+  padding: 1em 1.5em;
+  border-radius: 32px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+/* ------------------- */
+/* Media Query: Desktop /Mobile*/
+/* ------------------- */
+
+@media (min-width: 800px) {
+  .container {
+    padding: 80px 100px;
+  }
+}
