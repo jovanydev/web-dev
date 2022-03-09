@@ -25,6 +25,11 @@
   box-sizing: border-box;
 }
 
+.bg-dark-accent {
+  background-color: #136c72;
+  color: white;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -46,7 +51,6 @@ h1 {
   /* display: flex => flex container */
   display: flex;
   gap: 50px;
-  padding: 50px 0;
 }
 
 .col {
@@ -69,13 +73,16 @@ h1 {
   margin-bottom: 3em;
 }
 
+.about {
+  padding: 2em 0;
+}
+
 .about h2 {
   color: #87629a;
 }
 
-.bg-dark-accent {
-  background-color: #136c72;
-  color: white;
+.cost {
+  padding: 2em 0;
 }
 
 .btn {
