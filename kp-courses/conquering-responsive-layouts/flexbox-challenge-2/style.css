@@ -33,6 +33,10 @@ h1 {
   margin-top: 0;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
 .container {
   width: 80%;
   max-width: 1100px;
@@ -46,6 +50,11 @@ h1 {
 
   /* can't use yet */
   gap: 2em;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .col {
@@ -63,17 +72,38 @@ h1 {
   color: #fff;
 }
 
-.hero__text {
-  width: 62%;
+.hero__text,
+.about__product {
+  width: 60%;
 }
 
-.hero__img {
-  width: 32%;
+.hero__img,
+.about__price {
+  width: 40%;
   align-self: flex-start;
 }
 
 .hero p {
   margin-bottom: 3em;
+}
+
+.about {
+  padding-top: 3em;
+}
+
+.about__product {
+  color: #136c72;
+}
+
+.about__product p {
+  color: #3a3a3a;
+}
+
+.about__price {
+  background-color: #136c72;
+  color: white;
+  padding: 1em 2em;
+  text-align: center;
 }
 
 .btn {
