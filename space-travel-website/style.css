@@ -180,6 +180,11 @@ select {
   .grid-container > *:last-child {
     grid-column: 3;
   }
+
+  .grid-container--home {
+    padding-bottom: max(6rem, 20vh);
+    align-items: end;
+  }
 }
 
 .sr-only {
