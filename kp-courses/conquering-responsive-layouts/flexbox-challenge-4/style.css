@@ -29,7 +29,8 @@
     --fs-600: 3rem;
     --fs-500: 2.5rem;
     --fs-400: 1.75rem;
-    --fs-300: 1.125rem;
+    --fs-300: 1.3rem;
+    --fs-200: 1.2rem;
   }
 }
 
@@ -106,6 +107,10 @@ picture {
   gap: var(--gap, 1rem);
 }
 
+.col {
+  width: 50%;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -119,7 +124,7 @@ picture {
 .container {
   padding-inline: 2rem;
   margin-inline: auto;
-  max-width: 80rem;
+  max-width: 1128px;
 }
 
 /* Colors */
@@ -147,6 +152,10 @@ picture {
   color: var(--clr-brown);
 }
 
+.text-white {
+  color: white;
+}
+
 /* typography */
 
 /* Roboto 300 400 700 900*/
@@ -160,7 +169,7 @@ picture {
 }
 
 .letter-spacing-1 {
-  letter-spacing: 4.75px;
+  letter-spacing: 8px;
 }
 
 .letter-spacing-2 {
@@ -238,4 +247,26 @@ picture {
 .hero--container {
   max-width: 600px;
   margin: 0 auto;
+}
+
+.main.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.main h3 {
+  margin-bottom: 25px;
+}
+
+.primary-content, .secondary-content {
+  padding: 100px 0;
+}
+
+.primary-content--title,
+.secondary-content--title {
+  margin-bottom: 30px;
+}
+
+img {
+  border: none;
 }
