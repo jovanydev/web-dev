@@ -1,0 +1,100 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+:root {
+  /* colors */
+  --clr-dark: #222c2a;
+  --clr-light: #f3eed9;
+  --clr-brown: #824936;
+
+  /* Font sizes */
+  --fs-900: clamp(5rem, 8vw + 1rem, 9, 375rem);
+  --fs-800: 3.5rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1rem;
+  --fs-500: 1rem;
+  --fs-400: 1rem;
+  --fs-300: 0.9375rem;
+  --fs-200: 0.875rem;
+
+  /* font families */
+  --ff-serif: "Roboto", serif;
+  --ff-sans: "Playfair Display", sans-serif;
+}
+
+@media (min-width: 45em) {
+  :root {
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+  }
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset Margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* Default font weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-weight: 400;
+}
+
+body {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-400);
+  color: hsl(var(--clr-brown));
+  line-height: 1.5;
+  min-height: 100vh;
+  display: grid;
+  overflow-x: hidden;
+}
+
+/* Images eaiser to deal with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------- */
+/* Utility             */
+/* ------------------- */
