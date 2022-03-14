@@ -23,10 +23,10 @@ function changeTabPanel(e) {
   targetTab.setAttribute("aria-selected", true);
 
   hideContent(mainContainer, '[role="tabpanel"]');
-  showContent(mainContainer, targetPanel);
+  showContent(mainContainer, [`#${targetPanel}`]);
   
   hideContent(mainContainer, '.picture');
-  showContent(mainContainer, targetImage);
+  showContent(mainContainer, [`#${targetImage}`]);
 }
 
 function changeTabIndex(e) {
@@ -40,7 +40,6 @@ function changeTabIndex(e) {
     tabs[countIndex].setAttribute("tabindex", -1);
   }
   //if the right key is pushed, move to the next tab on the right
-
   if (e.keyCode === keydownRight) {
     countIndex++;
     if (countIndex >= tabs.length) {
@@ -68,7 +67,7 @@ function hideContent(parent, content) {
 
 function showContent(parent, content) {
   parent
-  .querySelector([`#${content}`])
+  .querySelector(content)
   .removeAttribute('hidden');
 
 }

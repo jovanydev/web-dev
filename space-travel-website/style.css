@@ -715,7 +715,7 @@ body {
   .grid-container--crew > .dot-indicators {
     justify-self: start;
   }
-  .grid-container--crew > picture {
+  .grid-container--crew > .picture {
     align-self: end;
   }
 }
