@@ -5,6 +5,24 @@ let countIndex = 0;
 
 tabList.addEventListener('keydown', changeTabIndex)
 
+tabs.forEach((tab) => {
+  tab.addEventListener('click', changeTabPanel)
+});
+
+function changeTabPanel(e) {
+  const targetTab = e.target;
+  const targetPanel = targetTab.getAttribute("aria-controls");
+  const tabContainer = targetTab.parentNode;
+  const mainContainer = tabContainer.parentNode;
+
+  mainContainer
+  .querySelectorAll('[role="tabpanel"]')
+  .forEach((panel) => panel.setAttribute("hidden", true));
+
+  mainContainer.querySelector([`#${targetPanel}`]).removeAttribute('hidden');
+  
+}
+
 function changeTabIndex(e) {
   const keydownLeft = 37;
   const keydownRight = 39;
